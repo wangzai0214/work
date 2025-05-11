@@ -1,0 +1,44 @@
+
+p{
+  /*正文字体颜色*/
+  color: maroon;
+  font-size: 2rem;
+  }
+  h1,h2
+  {
+  color: grey;
+  font-size: 2.5rem;
+  }
+  h1
+   {
+    border-bottom: 1px solid black;
+    font-size: 2.3rem;
+    }
+body {
+  font-family: Arial;
+  font-size: 1.5em;
+}
+
+em
+{
+  font-family: "Cascadia Mono";
+}
+html{
+  font-size: 15px;
+}
+
+body{
+  /* 用英文表示颜色 */
+	color: rgb(0, 225, 255);
+  /*用rgb表示演示*/
+	color: rgb(0, 0, 0);
+  /* 用十六进制表示颜色 */
+	color: #ff0095;
+  /* 用rgba表示颜色 */
+	color: rgba(51, 130, 221, 0.8);
+  /* 用十六进制表示颜色 */
+	color: #ff0000;
+}
+p {
+  font-style: italicSS;
+}
