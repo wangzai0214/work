@@ -1,101 +1,92 @@
 body {
-	font-size: small; /* 新的属性值，请自行了解 */
-	font-family: Verdana，Helvetica， Arial;
-  line-height: 1.6em;
-  margin: 0%;
-  padding: 0%;
+	font-size: small; /* 设置字体大小为 small */
+	font-family: Verdana, Helvetica, Arial; /*设置字体*/
+  line-height: 1.6em; /* 设置行高为字体大小的 1.6 倍 */
+  /*padding: 0;
+  margin: 0;*/ /* 去除 body 元素的内边距和外边距 */
 }
 
-h1, h2 {
-	color: #007e7e; /* 将标题设置为一种青绿色，使他和 logo 更相合 */
+/*p {
+  padding: 0;
+  margin: 0; 
+}/* 去除 body 元素的内边距和外边距 */
 
+h1, h2 {
+	color: #007e7e; /* 设置标题颜色 */
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 1.5em; /*设置字体大小*/
 }
 
-.elixirs h2 {
-	font-size: 1.3em;
-  color: black;
+h2 {
+	font-size: 1.3em; /*设置字体大小*/
 }
-.elixirs h3 {
-  color: #d12c47;
-}
-
 
 .guarantee {
-  border-color:        white;
-  border-width:        1px;
-  border-style:        dashed;
-  background-color:    #a7cece;
-  padding:             25px;
-  margin:              30px;
+  border-color: white;/*设置边框颜色*/
+  border-width: 1px;/*设置边框宽度*/
+  border-style: dashed;/*/* 设置边框样式为虚线 */
+  background-color: #a7cece;
+  margin: 30px;
   line-height: 1.9em;
-  font-style: italic;
   color: #444444;
-  font-family: Georgia, "Times New Roman";
+  font-style:italic;
+  font-family:Georgia, "Times New Roman";
   background-image: url(images/background.gif);
   background-repeat: no-repeat;
   background-position: top left;
   padding: 25px;
   padding-left: 80px;
   margin-right: 250px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  margin: 50px;
 }
 
-.elixirs 
-{
-  border-width: thin;
-	border-style: solid;
-	border-color: #007e7e;
-  width: 200px; 
-  padding-right:   20px;
-	padding-bottom:20px;
-	padding-left:20px;
-	margin-left:20px;
-  background-image:url(images/cocktail.gif);
-	background-repeat:repeat-x;
-	text-align:center;
-  line-height: 1em;
+.elixirs{
+  border-width: thin; /*设置元素边框的宽度为细边框*/
+  border-style: solid;/*设置元素边框的样式为实线*/
+  border-color: #007e7e;/*设置元素边框的颜色为青绿色*/
+  width : 200px;/*设置元素的宽度为 200 像素*/
+  padding-right:   20px;/*设置元素内容与右边框之间的内边距为 20 像素*/
+	padding-bottom:  20px;/*置元素内容与下边框之间的内边距为 20 像素*/
+	padding-left:    20px;/*设置元素内容与左边框之间的内边距为 20 像素*/
+	margin-left:     20px;/*设置元素左边的外边距为 20 像素*/
+  background-image: url(images/cocktail.gif);/*设置元素的背景图像*/
+  background-repeat: repeat-x;/*设置背景图像在水平方向上重复*/
+  text-align: center; /*设置元素内文本的对齐方式为居中*/
+  /*line-height: 1em;*/
+  line-height: 1;
 }
 
+div h2{
+  color: black;
+}
 
 .cd {
 	font-style: italic;
 }
+
 .artist {
 	font-weight: bold;
 }
 
-
-.elixirs a:link {    /* 链接未访问时的样式 */
-	color: #007e7e;
-  text-decoration: none; /* 去掉链接下划线 */
-}
-.elixirs a:visited {  /* 链接已访问时的样式 */
-	color: #333333;
-  text-decoration: none; /* 去掉链接下划线 */
-}
-.elixirs a:hover { /* 鼠标悬停时的样式 */
-	background: #f88396;
-	color: #0d5353;
-  text-decoration: none; /* 去掉链接下划线 */
+span{
+  display: inline-block;
+  width: 200px;
 }
 
-.directions a:link {    /* 链接未访问时的样式 */
-	color: #007e7e;
-  text-decoration: none; /* 去掉链接下划线 */
+.elixirs a:link{
+  color: #007e7e;
 }
-.test {
-  color:chartreuse
+.elixirs a:visited{
+  color: #333333;
 }
-
-.h1,h2{
-  font-weight: 600;
+.elixirs a:hover{
+  background: #f88396;
+  color: #05d353;
 }
-.h1{
-  font-weight: 200;
+.elixirs a{
+  text-decoration: none;
 }
-
