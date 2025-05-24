@@ -1,0 +1,118 @@
+body {
+	font-size: small; /* 设置字体大小为 small */
+	font-family: Verdana, Helvetica, Arial; /*设置字体*/
+  line-height: 1.6em; /* 设置行高为字体大小的 1.6 倍 */
+  /*padding: 0;
+  margin: 0;*/ /* 去除 body 元素的内边距和外边距 */
+}
+
+/*p {
+  padding: 0;
+  margin: 0; 
+}/* 去除 body 元素的内边距和外边距 */
+
+h1, h2 {
+	color: #007e7e; /* 设置标题颜色 */
+  font-weight: 600;
+}
+
+h1 {
+	font-size: 1.5em; /*设置字体大小*/
+  /*font-weight: 200;*/
+}
+
+h2 {
+	font-size: 1.3em; /*设置字体大小*/
+}
+
+.guarantee {
+  border-color: white;/*设置边框颜色*/
+  border-width: 1px;/*设置边框宽度*/
+  border-style: dashed;/*/* 设置边框样式为虚线 */
+  background-color: #a7cece;
+  margin: 30px;
+  line-height: 1.9em;
+  color: #444444;
+  font-style:italic;
+  font-family:Georgia, "Times New Roman";
+  background-image: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 25px;
+  padding-left: 80px;
+  margin-right: 250px;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  margin-right: 280px;
+
+}
+
+.footer{
+  margin: 30px;
+}
+
+.elixirs{
+  border-width: thin; /*设置元素边框的宽度为细边框*/
+  border-style: solid;/*设置元素边框的样式为实线*/
+  border-color: #007e7e;/*设置元素边框的颜色为青绿色*/
+  width : 200px;/*设置元素的宽度为 200 像素*/
+  padding-right:   20px;/*设置元素内容与右边框之间的内边距为 20 像素*/
+	padding-bottom:  20px;/*置元素内容与下边框之间的内边距为 20 像素*/
+	padding-left:    20px;/*设置元素内容与左边框之间的内边距为 20 像素*/
+	margin-left:     20px;/*设置元素左边的外边距为 20 像素*/
+  background-image: url(images/cocktail.gif);/*设置元素的背景图像*/
+  background-repeat: repeat-x;/*设置背景图像在水平方向上重复*/
+  text-align: center; /*设置元素内文本的对齐方式为居中*/
+  /*line-height: 1em;*/
+  line-height: 1;
+  float: right;
+}
+
+div h2{
+  color: black;
+}
+
+.cd {
+	font-style: italic;
+  margin-right: 50px;
+}
+
+.artist {
+	font-weight: bold;
+  margin-left: 10px;
+}
+
+span{
+  display: inline-block;
+  width: 200px;
+}
+
+.elixirs a:link{
+  color: #007e7e;
+}
+.elixirs a:visited{
+  color: #333333;
+}
+.elixirs a:hover{
+  background: #f88396;
+  color: #05d353;
+}
+.elixirs a{
+  text-decoration: none;
+}
+
+.text{
+  color: gold;
+}
+
+.green-font {
+  color: green;
+}
+
+.red-font {
+  color: red;
+}
+
+.blue-font {
+  color: blue;
+}
