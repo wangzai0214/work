@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+}
+
+.part1 {
+  height: 85vh; /* 保持视口高度，随屏幕缩放 */
+  position: relative; 
+  overflow: hidden; /* 隐藏背景图片溢出部分 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 关键修改：背景图片自适应覆盖 */
+.part1::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-image: url(image/car.jpg); 
+  /* 覆盖容器，保持宽高比（自动裁剪边缘，关键区域居中） */
+  background-size: cover; 
+  /* 背景图片居中（缩放时关键区域不偏移） */
+  background-position: center; 
+  filter: blur(18px) brightness(55%); 
+  transform: scale(1); /* 初始不放大 */
+  z-index: -1; 
+}
+
+.logo{
+    z-index: 10; 
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.left-nav {
+    z-index: 10; 
+    font-size: 14px;
+    position: absolute;
+    top: 60px; 
+    left: 50px;
+}
+  
+.left-nav a {
+    margin-right: 45px;
+}
+  
+.right-nav {
+    z-index: 10; 
+    font-size: 14px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+.right-nav a {
+    padding: 10px 15px;
+}
+.right-nav a:hover {
+    background-color: gray;
+}
+
+
+.tip {
+    z-index: 10; 
+    font-size: 17px;
+    font-family: normal,arial,helvetica,sans-serif;
+    background-color: rgba(4, 4, 4, 0.6);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+}
+.tip p{
+    color: white;
+    margin: 0px;
+}
+
+/* 设定页面主容器宽度为 1200 像素，并使其水平居中 */
+.allcontent {
+    width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+
+.text {
+  position: relative; 
+  height: 67.5vh; 
+  left: 2%; /* 改为相对单位（视口宽度的 2%） */
+  right: 2%; /* 改为相对单位（视口宽度的 2%） */
+  width: calc(100% - 4%); /* 宽度 = 父容器宽度 - 左右边距之和（2%*2） */
+  background-position: center;  
+  background-repeat: no-repeat; 
+  background-image: url(image/car.jpg); 
+  box-sizing: border-box; 
+}
+
+.text a {
+  color: white; 
+  font-weight: bold;
+}
